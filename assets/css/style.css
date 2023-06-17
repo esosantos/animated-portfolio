@@ -32,7 +32,11 @@ li{
 a{
     text-decoration: none;
 }
-
+/* ---- switch : propriedades pra mudar de color----*/
+.switch{
+    --white-color:#1C2330;
+    --black-color:#fff;
+}
 /* _______  container    ________*/
 .container{
     position: relative;
@@ -166,6 +170,31 @@ a{
 }
 .image-box img{
     width: 100%;
+    
+}
+.toggleSwitch{
+    position: relative;
+}
+.toggleSwitch .fa-solid{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.fa-sun{
+    display: none;
+    color: var(--white-color);
+}
+
+/*efeito da mudança de cor no icone*/
+.switch .fa-sun{
+    display: block;
+    color: var(--black-color);
+}
+.switch .fa-moon{
+    display: none;
 }
 /* _______      ________*/
 /* _______      ________*/
